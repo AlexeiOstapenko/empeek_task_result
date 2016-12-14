@@ -1,0 +1,33 @@
+C:\Users\Леха\Desktop\Test case\Test case\Test case\obj\Debug\Test case.csprojResolveAssemblyReference.cache
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\Test case.dll
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\Test case.pdb
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\Antlr3.Runtime.dll
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\EntityFramework.dll
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\Newtonsoft.Json.dll
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\System.Web.Mvc.dll
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\System.Web.Optimization.dll
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\System.Web.Providers.dll
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\System.Web.Razor.dll
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\System.Web.WebPages.dll
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\System.Web.WebPages.Razor.dll
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\WebGrease.dll
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\EntityFramework.xml
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\Newtonsoft.Json.xml
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\System.Web.Mvc.xml
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\System.Web.Razor.xml
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\System.Web.WebPages.xml
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\System.Web.WebPages.Razor.xml
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\ru\EntityFramework.resources.dll
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\ru\System.Web.Mvc.resources.dll
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\ru\System.Web.Optimization.resources.dll
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\ru\System.Web.Providers.resources.dll
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\ru\System.Web.Razor.resources.dll
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\ru\System.Web.WebPages.resources.dll
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\ru\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Леха\Desktop\Test case\Test case\Test case\bin\ru\System.Web.WebPages.Razor.resources.dll
+C:\Users\Леха\Desktop\Test case\Test case\Test case\obj\Debug\Test case.dll
+C:\Users\Леха\Desktop\Test case\Test case\Test case\obj\Debug\Test case.pdb

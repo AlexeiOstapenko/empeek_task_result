@@ -1,0 +1,137 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<!DOCTYPE html>
+
+<html ng-app="DataApp">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/Libraries/angular.js"></script>
+     <script>
+
+         // Модель
+         var model = {
+             Path: "",
+             Files: [{
+                 fileFullName:"",
+                 fileSize: "",
+                 //fieSizeMin: "",
+                 //fieSizeMid: "",
+                 //fieSizeMax:""
+             }]
+
+         };
+
+         var DataApp = angular.module("DataApp", []);
+
+         // Контроллер
+         
+
+         DataApp.controller("DataCtrl", function ($scope, $http) {
+             
+             $scope.list = model;
+             $scope.showText = function () {
+
+                 //alert($scope.list.Path);
+             }
+             // Поведение / Behavior
+             $scope.clickHandler = function () {
+                 $scope.list.Path = $scope.list.text;
+                 var DatetoJSON = angular.toJson($scope.list.Path);
+                 $http.post("api/data", DatetoJSON).
+                     success(function (respnse) {
+                         angular.forEach(respnse, function (val, key) {
+                             angular.forEach(val, function (v, k) {
+                                 //alert(v, k);
+                                 $scope.list.Files.push({
+                                     fileFullName: v,
+                                     fileSize:k
+                                   
+                                 })
+                             });
+                              
+                         });
+                         //$scope.getCount() = function (fileSize) {
+                         //    var mb = 1024 * 1024;
+                         //    var group1 = 0;
+                         //    for (var i in fileSize) {
+                         //        if (i.length <= 10 * mb)
+                         //            group1++;
+                         //        return group1;
+
+                         //    }
+                         //};
+                     })
+
+                 //$scope.list.eee = function () {
+                 //    alert($scope.list.Path);
+                 //}
+                 //$scope.list.Files({
+                 //    fileFullName: "",
+                 //    fileSize: ""
+                 //    // fileFullName: k+":"+v
+                 //})
+                 $scope.list.text = "";
+                 //$scope.list.eee = alert($scope.list.Path);
+                 
+                 
+             }
+
+         });
+
+    </script>
+</head>
+
+    <body ng-controller="DataCtrl">
+    <h1>{{list.Path}}</h1>
+    
+    @*<input ng-model="list.text" />*@
+   
+    @*<button ng-click="clickHandler()">Обновить</button>*@
+
+         <div class="panel">
+            
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--ng-repeat - директива указывает, что блок разметки должен быть повторен для каждого элемента в источнике данных.
+                        Выражение передаваемое в директиву (атрибут) - "<элемент> in <коллекция>"-->
+                    <tr ng-repeat="sizeFile in list.Files">
+                        @*<td>{{sizeFile.fileSize}}</td>*@
+                        <td>{{sizeFile.fileFullName}}</td>
+                       
+                    </tr>
+                </tbody>
+            </table>
+              <table class="table table-hover">
+                  <tr>
+                        <td>{{getCount(list.Files.fileSize)}}</td>
+                    </tr>
+             
+                 </table>
+             <div class="input-group">
+                <input ng-model="list.text" class="form-control" />
+                 
+                <span class="input-group-btn">
+                    <button ng-click="clickHandler()" class="btn btn-default" }>Search </button>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+   
