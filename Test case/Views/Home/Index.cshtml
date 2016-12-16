@@ -36,21 +36,19 @@
                  //alert($scope.list.Path);
              }
              // Поведение / Behavior
+             
              $scope.clickHandler = function () {
                  $scope.list.Path = $scope.list.text;
                  var DatetoJSON = angular.toJson($scope.list.Path);
                  $http.post("api/data", DatetoJSON).
                      success(function (respnse) {
                          angular.forEach(respnse, function (val, key) {
-                             angular.forEach(val, function (v, k) {
-                                 //alert(v, k);
-                                 $scope.list.Files.push({
-                                     fileFullName: v,
-                                     fileSize:k
-                                   
-                                 })
+                             $scope.list.Files.push({
+                                 fileFullName: val.fileFullName,
+                                 fileSize: val.fileSize
+
                              });
-                              
+
                          });
                          //$scope.getCount() = function (fileSize) {
                          //    var mb = 1024 * 1024;
@@ -104,7 +102,7 @@
                     <!--ng-repeat - директива указывает, что блок разметки должен быть повторен для каждого элемента в источнике данных.
                         Выражение передаваемое в директиву (атрибут) - "<элемент> in <коллекция>"-->
                     <tr ng-repeat="sizeFile in list.Files">
-                        @*<td>{{sizeFile.fileSize}}</td>*@
+                        <td>{{sizeFile.fileSize}}</td>
                         <td>{{sizeFile.fileFullName}}</td>
                        
                     </tr>
